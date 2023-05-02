@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div class="row">
+			<p class="header">My Calendar</p>
+		</div>
+		<div class="row calendar">
+			<div class="row week">
+				<div class="col-xs-1 wkend"><p>Sun</p></div>
+				<div class="col-xs-1 wkday"><p>Mon</p></div>
+				<div class="col-xs-1 wkday"><p>Tue</p></div>
+				<div class="col-xs-1 wkday"><p>Wed</p></div>
+				<div class="col-xs-1 wkday"><p>Thu</p></div>
+				<div class="col-xs-1 wkday"><p>Fri</p></div>
+				<div class="col-xs-1 wkend"><p>Sat</p></div>
+			</div>
+
+			<div class="row week">
+				<div class="col-xs-1 nday"></div>
+				<div class="col-xs-1 nday"></div>
+				<div class="col-xs-1 nday"></div>
+				<div class="col-xs-1 day"><p>1</p></div>
+				<div class="col-xs-1 day"><p>2</p></div>
+				<div class="col-xs-1 day"><p>3</p></div>
+				<div class="col-xs-1 day"><p>4</p></div>
+			</div>
+
+			<div class="row week">
+				<div class="col-xs-1 day"><p>5</p></div>
+				<div class="col-xs-1 day"><p>6</p></div>
+				<div class="col-xs-1 day"><p>7</p></div>
+				<div class="col-xs-1 day"><p>8</p></div>
+				<div class="col-xs-1 day"><p>9</p></div>
+				<div class="col-xs-1 day"><p>10</p></div>
+				<div class="col-xs-1 day"><p>11</p></div>
+			</div>
+
+			<div class="row week">
+				<div class="col-xs-1 day"><p>12</p></div>
+				<div class="col-xs-1 day"><p>13</p></div>
+				<div class="col-xs-1 day"><p>14</p></div>
+				<div class="col-xs-1 day"><p>15</p></div>
+				<div class="col-xs-1 day"><p>16</p></div>
+				<div class="col-xs-1 day"><p>17</p></div>
+				<div class="col-xs-1 day"><p>18</p></div>
+			</div>
+
+			<div class="row week">
+				<div class="col-xs-1 day"><p>19</p></div>
+				<div class="col-xs-1 day"><p>20</p></div>
+				<div class="col-xs-1 day"><p>21</p><img src="../assets/paw_print.svg" width="25px" style="position: absolute; left: 4px; top: 2px;"></div>
+				<div class="col-xs-1 day"><p>22</p></div>
+				<div class="col-xs-1 day"><p>23</p></div>
+				<div class="col-xs-1 day"><p>24</p></div>
+				<div class="col-xs-1 day"><p>25</p></div>
+			</div>
+
+			<div class="row week">
+				<div class="col-xs-1 day"><p>26</p></div>
+				<div class="col-xs-1 day"><p>27</p></div>
+				<div class="col-xs-1 day"><p>28</p></div>
+				<div class="col-xs-1 day"><p>29</p></div>
+				<div class="col-xs-1 day"><p>30</p></div>
+				<div class="col-xs-1 day"><p>31</p></div>
+				<div class="col-xs-1 nday"></div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="row">
+				<p class="subheader">Upcoming Appointments</p>
+			</div>
+			<div class="row appt">
+				<div class="col-xs-1" style="margin-right: 12px;">
+					<img src="../assets/dog.jpg" width="50" style="margin: 5px;">
+				</div>
+				<div class="col-xs-10">
+					<p class="infoText"><b>Spot (♂) - May 21</b></p>
+					<p class="infoSubText">2:00 PM - 3:00 PM</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row toolbar">
+			<a href="add.html" class="add">
+				<div class="plus">
+					
+				</div>
+			</a>
+		</div>
+		<img id="keyboard" src="../assets/keyboard.jpg" width="480">
+	</body>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+	<script src="https://unpkg.com/htmx.org@1.8.6" integrity="sha384-Bj8qm/6B+71E6FQSySofJOUjA/gq330vEqjFx9LakWybUySyI1IQHwPtbTU7bNwx" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../main.js"></script>
+	<link rel="stylesheet" href="../main.css">
+	<style type="text/css">
+		body {
+			overflow: hidden;
+		}
+
+		.infoText {
+			font-size: 16pt;
+			color: #ccbbcc;
+			text-align: left;
+			margin: 0px;
+			padding: 0px;
+			padding-left: 10px;
+		}
+
+		.infoSubText {
+			font-size: 12pt;
+			color: #ccbbcc;
+			text-align: left;
+			margin: 0px;
+			padding: 0px;
+			padding-left: 10px;
+			font-style: italic;
+		}
+
+		.appt {
+			border: 2px solid #666699;
+			border-radius: 5px;
+			background: rgba(72, 72, 72, 0.5);
+			margin-bottom: 5px;
+		}
+
+		.toolbar {
+			position: absolute;
+			left: 0;
+			bottom: 10px;
+		}
+
+		.calendar {
+			border-left: 2px solid #47476b;
+			margin-left: 100px;
+			margin-top: 10%;
+			margin-bottom: 10%;
+			width: 480px;
+		}
+
+		.week {
+			color: #eeddee;
+			font-size: 12px;
+		}
+
+		.wkday {
+			border: 2px solid #47476b;
+			border-left: none;
+			height: 20px;
+			background-color: #33334d;
+		}
+
+		.wkend {
+			border: 2px solid #47476b;
+			border-left: none;
+			height: 20px;
+			background-color: #33334d;
+		}
+
+		.day {
+			border: 2px solid #47476b;
+			border-top: none;
+			border-left: none;
+			height: 40px;
+			background-color: rgba(102,102,153, 0.5);
+		}
+
+		.day p {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding-right: 2px;
+		}
+
+		.nday {
+			border: 2px solid #47476b;
+			border-top: none;
+			border-left: none;
+			height: 40px;
+			background-color: rgba(72,72,72, 0.7);
+		}
+		
+		.add {
+			position: absolute;
+			width: 120px;
+			height: 120px;
+			left: 180px;
+			bottom: 0px;
+			border-radius: 50%;
+			background-color: #666699;
+		}
+
+		.plus {
+			width: 120px;
+			height: 120px;
+			background:
+			    linear-gradient(#ede 0 0),
+			    linear-gradient(#ede 0 0);
+			background-position:center;
+			background-size: 50% 3px,3px 50%; /*thickness = 2px, length = 50% (25px)*/
+			background-repeat:no-repeat;
+		}
+	</style>
+</html>

@@ -1,0 +1,85 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	width: 480px;
+	height: 800px;
+	background-color: #cc5200;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+label {
+	color: #eeddee;
+	text-shadow: 1px 1px 1px #666699;
+}
+
+a {
+	color: #eeddee;
+}
+
+a:hover {
+	color: #ccbbcc;
+	text-decoration: underline;
+}
+
+.row {
+	margin: 0px;
+	padding: 0px;
+}
+
+.logo {
+	font-size: 60pt;
+	font-weight: 800;
+	color: #eeddee;
+	text-align: center;
+	text-shadow: 2px 2px 5px #666699;
+	margin: 0px;
+	padding: 0px;
+}
+
+.sublogo {
+	font-size: 20pt;
+	color: #ccbbcc;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 80px;
+}
+
+.header {
+	font-size: 40pt;
+	font-weight: 200;
+	color: #eeddee;
+	text-align: left;
+	text-decoration: underline;
+	text-shadow: 2px 2px 1px #666699;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+}
+
+.subheader {
+	font-size: 24pt;
+	font-weight: 100;
+	color: #eeddee;
+	text-align: left;
+	text-decoration: underline;
+	text-shadow: 2px 2px 1px #666699;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+}
+
+#keyboard {
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	visibility: hidden;
+}
