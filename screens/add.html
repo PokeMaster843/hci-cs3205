@@ -1065,7 +1065,7 @@
 			
 			let filters = document.getElementsByClassName("hidden-filters");
 			for(let i = 0; i < filters.length; i++) {
-				filters[i].style.display = filters[i].style.display === "none" ? "block" : "none";
+				filters[i].style.display = filters[i].style.display !== "block" ? "block" : "none";
 			}
 
 			if(filters[0].style.display === "none") {
